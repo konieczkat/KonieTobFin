@@ -1,0 +1,13 @@
+Package: KonieTobFin
+Type: Package
+Title: Analytical Functions for X dataset
+Version: 0.1.0
+Author: Tobias Konieczka
+Maintainer: The package maintainer <konieczkat@outlook.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: tidyverse
+RoxygenNote: 7.2.3
