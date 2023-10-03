@@ -19,13 +19,13 @@ filterByRegion <- function(data, scale = "Continental", locality){
   library(dplyr)
 
   if (scale == "Continental"){
-    out <- filter(data$continent_name == locality)
+    out <- data %>% filter(data$continent_name == locality)
   }
   else if (scale == "Code"){
-    out <- filter(data$continent_code == locality)
+    out <- data %>% filter(data$continent_code == locality)
   }
   else{
-    out <- filter(data$country_region == locality)
+    out <- data %>% filter(data$country_region == locality)
   }
   return(out)
 }
