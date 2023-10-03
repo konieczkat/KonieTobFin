@@ -1,5 +1,6 @@
 #' A function that does something
 #' @export
+#'
 vaccinationInfo <- function(){
   library(tidyverse)
   library(tibble)
