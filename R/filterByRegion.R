@@ -18,24 +18,14 @@ filterByRegion <- function(data, scale = "Continental", locality){
   library(tidyverse)
   library(dplyr)
 
-
-  if (!is.character(scale)){
-    stop("Scale must be Continental, COuntry, or Code")
-  }
-  if(scale != "Continental" | scale != "Country" | scale != "Code"){
-    stop("Scale must be Continental, Country, or Code")
-  }
-  if (!is.character(locality)){
-    stop("locality must be valid character and not numeric")
-  }
   if (scale == "Continental"){
-    out <- data %>% dplyr:filter(data$continent_name == locality)
+    out <- filter(data$continent_name == locality)
   }
   else if (scale == "Code"){
-    out <- data$continent_code %>% filter(locality)
+    out <- filter(data$continent_code == locality)
   }
   else{
-    out <- data$country_region %>% filter(locality)
+    out <- filter(data$country_region == locality)
   }
   return(out)
 }

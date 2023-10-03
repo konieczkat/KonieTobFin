@@ -1,4 +1,5 @@
 #' Returns a tibble that contains information on countries with at least one dose
+#' @export
 library(tidyverse)
 library(dplyr)
 
