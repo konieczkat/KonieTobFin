@@ -1,6 +1,6 @@
 #' A function that does something
 #' @export
-vaccinationInfo <- function(DataName){
+vaccinationInfo <- function(){
   devtools::install_github("RamiKrispin/coronavirus")
   library(coronavirus)
   library(tidyverse)
