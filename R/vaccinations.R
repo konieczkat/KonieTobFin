@@ -1,8 +1,10 @@
-vaccinationInfo <- function(){
-  install.packages("coronavirus")
-  install.packages(tidyverse)
+#' A function that does something
+#' @export
+vaccinationInfo <- function(DataName){
+  devtools::install_github("RamiKrispin/coronavirus")
   library(coronavirus)
   library(tidyverse)
-  dataFile <- as.tibble(coronavirus::covid19_vaccine)
-  return(dataFile)
+  library(tibble)
+  DataName <- as_tibble(coronavirus::covid19_vaccine)
+  return(DataName)
 }
