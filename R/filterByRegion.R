@@ -1,6 +1,8 @@
 #' Returns all data for a specified Continent
 #' @export
 #'
+#' @param data The tibble from which the information will be filtered
+#'
 #' @param scale The scale of the area of interest. "Continental" refers to Continents by name,
 #' "Code refers to Continents by letter code, and "National" refers to Countries by name. Default
 #' is Continental
@@ -10,8 +12,13 @@
 #' @examples Africa_Data <-
 #'
 #' #
-#'
+
+
 filterByRegion <- function(data, scale = "Continental", locality){
+  library(tidyverse)
+  library(dplyr)
+
+
   if (!is.character(scale)){
     stop("Scale must be Continental, COuntry, or Code")
   }
@@ -22,7 +29,7 @@ filterByRegion <- function(data, scale = "Continental", locality){
     stop("locality must be valid character and not numeric")
   }
   if (scale == "Continental"){
-    out <- data %>% filter(data$continent_name == locality)
+    out <- data %>% dplyr:filter(data$continent_name == locality)
   }
   else if (scale == "Code"){
     out <- data$continent_code %>% filter(locality)

@@ -9,5 +9,5 @@ Description: More about what it does (maybe more than one line)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: tidyverse, devtools
+Imports: tidyverse, devtools, dplyr, ggplot2, tibble, usethis, roxygen2
 RoxygenNote: 7.2.3
