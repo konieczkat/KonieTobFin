@@ -5,6 +5,6 @@
 
 vax_percentage <- function(data){
   percentage <- (data$at_least_one_dose / data$population) * 100
-  newData <- data %>% ungroup() %>% mutate(Percent_Vaxxed = percentage)
-  return(newData)
+  data$Percent_Vaxxed <- percentage
+  return(data)
 }
