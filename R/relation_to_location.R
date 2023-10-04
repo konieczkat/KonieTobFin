@@ -8,6 +8,6 @@
 #' @export
 #'
 relation_to_location <- function(data,var, lat, long){
-  linReg <- lm(data$people_at_least_one_dose ~ lat:long, data = data)
+  linReg <- lm(data$people_at_least_one_dose ~ lat + long + lat:long, data = data)
   return(summary(linReg))
 }
