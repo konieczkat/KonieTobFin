@@ -10,7 +10,7 @@
 #' @export
 
 relevise <- function(data){
-  newTibble <- data %>% select(continent_name, country_region, continent_code, doses_admin, people_at_least_one_dose, population, lat, long)
+  newTibble <- data %>% select(date, continent_name, country_region, continent_code, doses_admin, people_at_least_one_dose, population, lat, long)
   return(newTibble)
 }
 
