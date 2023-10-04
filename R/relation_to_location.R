@@ -8,6 +8,6 @@
 #' @export
 #'
 relation_to_location <- function(data,var, lat, long){
-  linReg <- lm(data$var ~ lat + long + lat:long, data = data)
+  linReg <- lm(var ~ lat + long + lat:long, data = data)
   return(summary(linReg))
 }
