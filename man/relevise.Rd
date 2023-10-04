@@ -9,3 +9,7 @@ relevise(data)
 \description{
 Parses only the relevant data from the dataset
 }
+\examples{
+relevant_data <- relevise(data)
+
+}
