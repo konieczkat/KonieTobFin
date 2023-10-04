@@ -8,7 +8,7 @@
 #'
 #' @export
 
-filter_By_Country <- function(data, country){
+filter_by_country <- function(data, country){
   out <- data %>% filter(data$country_region == country)
   return(out)
 }

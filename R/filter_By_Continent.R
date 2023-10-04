@@ -8,7 +8,7 @@
 #'
 #' @export
 
-filter_By_Continent<- function(data, country){
+filter_by_continent<- function(data, country){
   out <- data %>% filter(data$continent_name == country)
   return(out)
 }

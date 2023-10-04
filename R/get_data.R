@@ -9,7 +9,7 @@
 #'
 #' @export
 
-getData <- function(){
+get_data <- function(){
   devtools::install_github("RamiKrispin/coronavirus")
   DataName <- as_tibble(coronavirus::covid19_vaccine)
   return(DataName)
