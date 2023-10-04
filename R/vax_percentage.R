@@ -5,6 +5,6 @@
 
 vax_percentage <- function(data){
   percentage <- (data$at_least_one_dose / data$population) * 100
-  newData <- mutate(data, percentage)
+  newData <- data %>% mutate('Vaccination Rate' = percentage)
   return(newData)
 }
