@@ -2,10 +2,17 @@
 % Please edit documentation in R/visualyze_line.R
 \name{visualyze_line}
 \alias{visualyze_line}
-\title{Constructs a bar plot of vaccination information from a data set}
+\title{Constructs a trend line of vaccination rates over time}
 \usage{
 visualyze_line(data, dateBreaks = waiver(), dateLabels = waiver())
 }
+\arguments{
+\item{data}{The tibble from which the plot will be constructed}
+
+\item{dateBreaks}{Specifies the data breaks in the x-axis}
+
+\item{dateLabels}{Specifies the data Labels in the x-axis}
+}
 \description{
-Constructs a bar plot of vaccination information from a data set
+Constructs a trend line of vaccination rates over time
 }

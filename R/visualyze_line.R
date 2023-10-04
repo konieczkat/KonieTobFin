@@ -1,8 +1,12 @@
-#' Constructs a bar plot of vaccination information from a data set
+#' Constructs a trend line of vaccination rates over time
 #'
 #' @import tidyverse
 #' @import ggplot2
 #' @import dplyr
+#'
+#' @param data The tibble from which the plot will be constructed
+#' @param dateBreaks Specifies the data breaks in the x-axis
+#' @param dateLabels Specifies the data Labels in the x-axis
 #'
 #' @export
 #'
