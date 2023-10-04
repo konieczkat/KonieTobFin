@@ -6,6 +6,6 @@
 #' @export
 #'
 filter_by_date <- function(data, past, future){
-  dateData <- data %>% filter(data$date > as.Date(past) & data$date < as.Date(future))
+  dateData <- data %>% filter(data$date >= as.Date(past) & data$date <= as.Date(future))
   return(dateData)
 }
