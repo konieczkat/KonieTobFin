@@ -4,10 +4,12 @@
 \alias{visualyze_line}
 \title{Constructs a trend line of vaccination rates over time}
 \usage{
-visualyze_line(data, dateBreaks = waiver(), dateLabels = waiver())
+visualyze_line(data, interest, dateBreaks = waiver(), dateLabels = waiver())
 }
 \arguments{
 \item{data}{The tibble from which the plot will be constructed}
+
+\item{interest}{A vector of information to be plotted against time}
 
 \item{dateBreaks}{Specifies the data breaks in the x-axis}
 
