@@ -4,7 +4,7 @@
 \alias{visualyze_line}
 \title{Constructs a bar plot of vaccination information from a data set}
 \usage{
-visualyze_line(data, breaks)
+visualyze_line(data, dateBreaks = waiver(), dateLabels = waiver())
 }
 \description{
 Constructs a bar plot of vaccination information from a data set
