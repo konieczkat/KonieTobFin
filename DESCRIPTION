@@ -1,6 +1,6 @@
 Package: KonieTobFin
 Type: Package
-Title: Analytical Functions for X dataset
+Title: Analytical Functions for vaccine data from coronavirus dataset
 Version: 0.1.0
 Author: Tobias Konieczka
 Maintainer: The package maintainer <konieczkat@outlook.com>

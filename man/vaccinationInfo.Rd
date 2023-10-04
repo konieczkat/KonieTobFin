@@ -2,10 +2,15 @@
 % Please edit documentation in R/vaccinationInfo.R
 \name{vaccinationInfo}
 \alias{vaccinationInfo}
-\title{A function that does something}
+\title{Installs and loads the covid vaccine dataset from the coronavirus package}
 \usage{
 vaccinationInfo()
 }
 \description{
-A function that does something
+Installs and loads the covid vaccine dataset from the coronavirus package
+}
+\examples{
+# data <- vaccinationInfo()
+# head(data)
+
 }

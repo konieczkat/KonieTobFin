@@ -1,0 +1,16 @@
+#' Installs and loads the covid vaccine dataset from the coronavirus package
+#'
+#' @import tidyverse
+#' @import tibble
+#'
+#' @examples
+#' # data <- getData()
+#' # head(data)
+#'
+#' @export
+
+getData <- function(){
+  devtools::install_github("RamiKrispin/coronavirus")
+  DataName <- as_tibble(coronavirus::covid19_vaccine)
+  return(DataName)
+}
