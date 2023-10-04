@@ -9,6 +9,6 @@
 #' @export
 
 filter_By_Code <- function(data, code){
-  out <- data %>% filter(data$continent_code)
+  out <- data %>% filter(data$continent_code == code)
   return(out)
 }
