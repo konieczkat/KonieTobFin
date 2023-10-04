@@ -2,6 +2,6 @@
 #'
 #' @export
 #'
-vax_percentage <- function (data){
-  data$Percent_Vax <- (data$people_at_least_one_dose / data$population)*100
+vax_percentage <- function(data){
+  return(data$Percent_Vax <- (data$people_at_least_one_dose / data$population)*100)
 }
