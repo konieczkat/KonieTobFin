@@ -14,7 +14,7 @@
 visualyze_line <- function(data, interest, dateBreaks = waiver(), dateLabels = waiver()){
   aPlot <- ggplot(data, aes(x = date, y = interest)) +
     geom_line() +
-    labs(y = "People with One or More Doses", x = "Date") +
-    ggtitle("Vaccination Trend") + scale_x_date(date_breaks = dateBreaks, date_labels = dateLabels)
+    labs(y = "Vaccination Data", x = "Date") +
+    ggtitle("Vaccination Trends") + scale_x_date(date_breaks = dateBreaks, date_labels = dateLabels)
   return(aPlot)
 }
