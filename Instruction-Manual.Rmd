@@ -3,6 +3,7 @@ title: "Instruction Manual"
 author: "Tobias Konieczka"
 date: "`r Sys.Date()`"
 output: pdf_document
+bibliography: ref.bib
 urlcolor: blue
 ---
 
@@ -132,3 +133,9 @@ the relationship between total doses and latitude, total doses and longitude, an
 data %>% relation_to_location(., .$doses_admin, .$lat, .$long)
 ```
 The output of this call demonstrates that there is a clear association between the number of doses administered in a country and that country's location on Earth.
+
+\newpage
+# Future Considerations
+
+As it stands, this package serves to simplify a very large dataset containing a large number of observations and a moderate amount of columns into a more manageable form. While the analytical functions utilized in this package were designed to work with subset forms
+of the orignal data, they are limited in functionality as they can only really be used with RamiKrispin's vaccine data. The visualization function in the package is only able to produce a line graph, which is limiting. Since there is a data point from every country for every day over a few year period, space and time were the defining factors in the analysis. Since I'm not a statistician, I'm sure there are seemingly obvious research questions that could be answered through some combination of my function, although the visualyze_line and relation_to_location methods are may be too specific to be applied in any way other than their current implementation. Ultimately, the functions contained within these packages are designed more with data management in mind, rather than analytical considerations. This could, of course, be due to the limited application of a number of the original columns, which were almost always identifiers. Had more quantitative data been available in the original data (i.e., what company produced the vaccine used in each country, updates to the population data for each country, mortality rates, etc) I believe that more statistically interesting/relevant questions could be asked and answered using these methods.
