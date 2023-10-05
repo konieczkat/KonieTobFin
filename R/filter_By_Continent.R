@@ -1,10 +1,11 @@
-#' Returns all data for a specified Continent
+#' Returns all vaccination data for a specified Continent
 #'
 #' @import tidyverse
 #' @import dplyr
 #'
-#' @param data The tibble from which the information will be filtered
-#' @param country The continent of interest
+#' @param data A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+#' coronavirus package.
+#' @param country The continent of interest in the vaccination dataset
 #'
 #' @export
 

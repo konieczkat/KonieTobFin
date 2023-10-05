@@ -2,15 +2,16 @@
 % Please edit documentation in R/filter_by_continent.R
 \name{filter_by_continent}
 \alias{filter_by_continent}
-\title{Returns all data for a specified Continent}
+\title{Returns all vaccination data for a specified Continent}
 \usage{
 filter_by_continent(data, country)
 }
 \arguments{
-\item{data}{The tibble from which the information will be filtered}
+\item{data}{A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+coronavirus package.}
 
-\item{country}{The continent of interest}
+\item{country}{The continent of interest in the vaccination dataset}
 }
 \description{
-Returns all data for a specified Continent
+Returns all vaccination data for a specified Continent
 }

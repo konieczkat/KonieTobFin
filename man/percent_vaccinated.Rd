@@ -2,10 +2,14 @@
 % Please edit documentation in R/percent_vaccinated.R
 \name{percent_vaccinated}
 \alias{percent_vaccinated}
-\title{a function that adds the percent of vaccinated people based on people with at least one dose}
+\title{Adds the percentage of vaccinated people to a tibble containing vaccination data.}
 \usage{
 percent_vaccinated(data)
 }
+\arguments{
+\item{data}{A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+coronavirus package.}
+}
 \description{
-a function that adds the percent of vaccinated people based on people with at least one dose
+Adds the percentage of vaccinated people to a tibble containing vaccination data.
 }

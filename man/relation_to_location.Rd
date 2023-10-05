@@ -2,7 +2,8 @@
 % Please edit documentation in R/relation_to_location.R
 \name{relation_to_location}
 \alias{relation_to_location}
-\title{Constructs a linear regression model between a vector and physical space}
+\title{Constructs a linear regression model between a specified vaccination variable
+and a country's latitude/longitude}
 \usage{
 relation_to_location(data, var, lat, long)
 }
@@ -16,5 +17,6 @@ relation_to_location(data, var, lat, long)
 \item{long}{Longitude}
 }
 \description{
-Constructs a linear regression model between a vector and physical space
+Constructs a linear regression model between a specified vaccination variable
+and a country's latitude/longitude
 }

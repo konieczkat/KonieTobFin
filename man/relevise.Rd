@@ -2,14 +2,18 @@
 % Please edit documentation in R/relevise.R
 \name{relevise}
 \alias{relevise}
-\title{Parses only the relevant data from the dataset}
+\title{Removes columns deemed unnecessary in vaccine dataset. Keeps the date, Continent,
+Country, Total Doses Administered, Number of People with at Least One Dose,
+Total Population, Latitude, and Longitude.}
 \usage{
 relevise(data)
 }
-\description{
-Parses only the relevant data from the dataset
+\arguments{
+\item{data}{A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+coronavirus package.}
 }
-\examples{
-relevant_data <- relevise(data)
-
+\description{
+Removes columns deemed unnecessary in vaccine dataset. Keeps the date, Continent,
+Country, Total Doses Administered, Number of People with at Least One Dose,
+Total Population, Latitude, and Longitude.
 }

@@ -2,12 +2,13 @@
 % Please edit documentation in R/visualyze_line.R
 \name{visualyze_line}
 \alias{visualyze_line}
-\title{Constructs a trend line of vaccination rates over time}
+\title{Constructs a trend line of selected vaccination data over time.}
 \usage{
 visualyze_line(data, interest, dateBreaks = waiver(), dateLabels = waiver())
 }
 \arguments{
-\item{data}{The tibble from which the plot will be constructed}
+\item{data}{A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+coronavirus package.}
 
 \item{interest}{A vector of information to be plotted against time}
 
@@ -16,5 +17,5 @@ visualyze_line(data, interest, dateBreaks = waiver(), dateLabels = waiver())
 \item{dateLabels}{Specifies the data Labels in the x-axis}
 }
 \description{
-Constructs a trend line of vaccination rates over time
+Constructs a trend line of selected vaccination data over time.
 }

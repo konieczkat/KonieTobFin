@@ -2,10 +2,20 @@
 % Please edit documentation in R/filter_by_date.R
 \name{filter_by_date}
 \alias{filter_by_date}
-\title{Filters a tibble between two dates}
+\title{Filters a tibble containing vaccination data between two dates. If the same date is used
+for both parameters}
 \usage{
 filter_by_date(data, past, future)
 }
+\arguments{
+\item{data}{A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+coronavirus package.}
+
+\item{past}{The earlier date in the specified range}
+
+\item{future}{The later date in the specified range}
+}
 \description{
-Filters a tibble between two dates
+Filters a tibble containing vaccination data between two dates. If the same date is used
+for both parameters
 }

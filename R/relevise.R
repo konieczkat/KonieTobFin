@@ -1,11 +1,13 @@
-#' Parses only the relevant data from the dataset
+#' Removes columns deemed unnecessary in vaccine dataset. Keeps the date, Continent,
+#' Country, Total Doses Administered, Number of People with at Least One Dose,
+#' Total Population, Latitude, and Longitude.
 #'
 #' @import tidyverse
 #' @import dplyr
 #' @import tibble
 #'
-#' @examples
-#' relevant_data <- relevise(data)
+#' @param data A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+#' coronavirus package.
 #'
 #' @export
 

@@ -2,12 +2,12 @@
 % Please edit documentation in R/get_data.R
 \name{get_data}
 \alias{get_data}
-\title{Installs and loads the covid vaccine dataset from the coronavirus package}
+\title{Installs and loads the covid vaccine dataset from the RamiKrispin's package "coronavirus"}
 \usage{
 get_data()
 }
 \description{
-Installs and loads the covid vaccine dataset from the coronavirus package
+Installs and loads the covid vaccine dataset from the RamiKrispin's package "coronavirus"
 }
 \examples{
 # data <- getData()

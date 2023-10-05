@@ -1,11 +1,10 @@
 Package: KonieTobFin
 Type: Package
-Title: Analytical Functions for vaccine data from coronavirus dataset
+Title: Analysis Functions and Tibble Manipulation for Coronavirus Vaccine Dataset
 Version: 0.1.0
 Author: Tobias Konieczka
 Maintainer: The package maintainer <konieczkat@outlook.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: This package contains methods to analyze vaccine data from the coronavirus package created by Rami Krispin. Functions to filter, visualize, and test correlation are included in the package. The package requires tidyverse packages for operation.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

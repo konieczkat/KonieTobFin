@@ -1,10 +1,11 @@
-#' Constructs a trend line of vaccination rates over time
+#' Constructs a trend line of selected vaccination data over time.
 #'
 #' @import tidyverse
 #' @import ggplot2
 #' @import dplyr
 #'
-#' @param data The tibble from which the plot will be constructed
+#' @param data A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+#' coronavirus package.
 #' @param interest A vector of information to be plotted against time
 #' @param dateBreaks Specifies the data breaks in the x-axis
 #' @param dateLabels Specifies the data Labels in the x-axis

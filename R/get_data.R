@@ -1,4 +1,4 @@
-#' Installs and loads the covid vaccine dataset from the coronavirus package
+#' Installs and loads the covid vaccine dataset from the RamiKrispin's package "coronavirus"
 #'
 #' @import tidyverse
 #' @import tibble

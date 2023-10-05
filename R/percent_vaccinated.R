@@ -1,7 +1,10 @@
-#' a function that adds the percent of vaccinated people based on people with at least one dose
+#' Adds the percentage of vaccinated people to a tibble containing vaccination data.
 #'
 #' @import tidyverse
 #' @import dplyr
+#'
+#' @param data A tibble containing relevant covid-19 vaccination information obtained from RamiKrispin's
+#' coronavirus package.
 #'
 #' @export
 #'
